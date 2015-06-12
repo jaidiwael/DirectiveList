@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/app.js"></script>
+
+</head>
+
+<body ng-app="FetchApp">
+  <div class="container" ng-controller="crtlItem">
+    <div class="row">
+      <div class="col-lg-4 ">
+            <h2>List Items </h2>
+      </div>
+      <div class="col-lg-4 pdgTop20">
+           <button type="button" ng-click="changeSource('satck')" class="btn">List Stackoverflow</button>
+           <button type="button" ng-click="changeSource('filkr')" class="btn">List Filkr</button>
+      </div>
+      <div class="col-lg-4 ">
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-lg-7 " >
+        <list-Items listdata="stack" nbitems="15" refdelay="100"></list-Items>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
