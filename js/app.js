@@ -32,7 +32,7 @@ App.controller("crtlItem", function($scope,$interval,$http,$timeout,GetListItems
               $scope.filkr = [];
               d.items.forEach(function(r) { $scope.filkr.push(r);});
           });
-         /*
+         
           switch ($attrs.listdata) {
                 case 'filkr':
                      $interval( function(){ 
@@ -52,7 +52,7 @@ App.controller("crtlItem", function($scope,$interval,$http,$timeout,GetListItems
                     break;
             }
 
-          */
+          
           $scope.changeSource = function(src){
 
            var myEl = angular.element(document.querySelector('list-Items'));
